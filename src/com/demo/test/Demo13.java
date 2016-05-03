@@ -6,6 +6,7 @@ package com.demo.test;
  *
  */
 public class Demo13 {
+	
 	public static void main(String[] args) {
 		long l1 = 4l;
 		int i2 = 5;
