@@ -16,6 +16,7 @@ public class Test1 {
 		obj.setLike("pingping");
 		obj.setName("xiaoyu");
 		
+		
 		 //我日这样是可以的得到的嘛
 	     System.out.println("原来的各个属性的值: ");  
 	     System.out.println("city = " + FieldUtil.getFieldValue(obj, "city"));
