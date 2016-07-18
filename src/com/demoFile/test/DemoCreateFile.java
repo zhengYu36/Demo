@@ -32,8 +32,10 @@ public class DemoCreateFile {
 			//这里的编码格式，因为我是用eclipse的utf-8的，所有这样就是
 			BufferedReader br=new BufferedReader(new InputStreamReader(new FileInputStream("d:/temp/file/addfile.txt"),"utf-8")); 
 			String data = null;
+			 //StringBuilder sb = new StringBuilder();
 			while((data = br.readLine()) != null){
 				System.out.println(data);
+				//sb.append(data);  这里是把值放到sb里面去哈
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
