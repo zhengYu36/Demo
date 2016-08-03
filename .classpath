@@ -12,6 +12,11 @@
 	<classpathentry kind="lib" path="src/jsr311-api-1.1.1.jar"/>
 	<classpathentry kind="lib" path="src/commons-pool-1.6.jar"/>
 	<classpathentry kind="lib" path="src/commons-pool2-2.3.jar"/>
+	<classpathentry kind="lib" path="src/cxf-core-3.1.6.jar"/>
+	<classpathentry kind="lib" path="src/cxf-rt-transports-http-3.1.6.jar"/>
+	<classpathentry kind="lib" path="src/jackson-annotations-2.7.0.jar"/>
+	<classpathentry kind="lib" path="src/jackson-core-2.7.0.jar"/>
+	<classpathentry kind="lib" path="src/jackson-databind-2.7.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

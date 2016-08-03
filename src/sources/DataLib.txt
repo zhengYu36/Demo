@@ -1,0 +1,16 @@
+// 说明：这个是数据仓库，主要是存储的是平时需要测试的时候需要的数据，但是在测试完了之后，二回又需要的测试数据哈
+// 注意下哈，这个书存数据的地方，如果要用这个数据测试的时候，要讲数据放到JsonValue里面去
+
+//测试获取json数据
+{"name":"xiaoyu","age":"23","like":"game"}
+
+
+//关于测试json数组的模拟数据(给测试获取json数组的时候的测试数据)
+{
+"name":"xiaoyu",
+"employees": [
+{ "firstName":"Bill" , "lastName":"Gates" },
+{ "firstName":"George" , "lastName":"Bush" },
+{ "firstName":"Thomas" , "lastName":"Carter" }
+]
+}

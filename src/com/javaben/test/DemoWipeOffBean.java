@@ -25,7 +25,7 @@ public class DemoWipeOffBean {
 		ObjectMapper om = new ObjectMapper();
 		om.setSerializationInclusion(Include.NON_EMPTY);
 
-		System.out.println(om.writeValueAsString(data));
+		System.out.println(om.writeValueAsString(data));   //这个是转换为把对象转换为json格式
 
 		} 
 }
