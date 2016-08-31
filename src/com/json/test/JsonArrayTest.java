@@ -1,9 +1,12 @@
 package com.json.test;
 
 import java.io.IOException;
+import java.util.Map;
+
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.jndi.url.corbaname.corbanameURLContextFactory;
 
 /**
  * 1.关于json数组数据的读取和测试类
@@ -36,7 +39,9 @@ public class JsonArrayTest {
 		/**然后再来解析json里面的数据哈*/
 		ObjectMapper mapper = new ObjectMapper();  //我要用的话，肯定需要首先实例化撒
 		
-		/**第一种：解析成实体,注意：实体和json里面的必须要对应好才行，当时如果是数字的哈，这个还是可以用的哈*/
+		/**第一种：解析成实体,注意：实体和json里面的必须要对应好才行，当时如果是数字的哈，这个还是可以用的哈,
+		 * 但是必须和json字段对应，这点不好
+		 **/
 		EntityTest t = mapper.readValue(returnJson, EntityTest.class);
 		System.out.println("name:"+t.getName());
 		System.out.println("age:"+t.getAge());
@@ -44,10 +49,10 @@ public class JsonArrayTest {
 		/**第二种:直接解析,这里我们是解析成map了哈，如果map里面的key下面还是json,那么就会。。。。
 		 * 应该会解析成List吧，晕。。。
 		 * */
-		
+				
 		//第一:通过readValue
 /*		Map<String,Object> userData = mapper.readValue(returnJson, Map.class);   //然后这里我为什么要用readValue呢？
-		String str1=(String) userData.get("name");  //这里可以直接得到name
+		String str1=(String) userData.get("name");  //这里可以直接得到name 还有就算name在json不存在也不会报错，最多返回回null
 		System.out.println("str1:"+str1); 
 		
 		//但是里面的employees应该是一个集合

@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 /**
  * MD5 32位加密的和16位加密的
  * @author zhengYu
- *
+ * 注:当然，如果要解密的话，也是很简单的，直接在百度里面百度md5解密就可以了
  */
 public class TestMD5 {
 	
