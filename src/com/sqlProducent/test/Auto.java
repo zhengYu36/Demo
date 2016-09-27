@@ -279,8 +279,10 @@ public class Auto {
 	public static BufferedReader openAStream(String theFileOfRawSql){
 		BufferedReader br = null;
 		try {
-			br = new BufferedReader(new InputStreamReader(new FileInputStream(theFileOfRawSql)));
-		} catch (FileNotFoundException e) {
+			//br = new BufferedReader(new InputStreamReader(new FileInputStream(theFileOfRawSql)));
+			//因为我是英文的操作系统，所以这里要转换成GBK，如果不是英文系统就不需要转换哈
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(theFileOfRawSql),"GBK"));  
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return br;
